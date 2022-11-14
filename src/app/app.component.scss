@@ -147,6 +147,12 @@ div.sidebar-mobile-menu{
   min-height: 600px;
   border-radius: 3px;
 }
+.sidebar-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
 
 
 @media screen and (max-width: 1700px ){
