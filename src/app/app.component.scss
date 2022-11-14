@@ -5,6 +5,7 @@
 .main-container{
   margin: 0px;
   font-family: iransans;
+
 }
 #header{
   min-width: 300px;
@@ -29,6 +30,7 @@
   background-color: #36494E;
   margin: 3px 5px;
   margin-bottom: 0px;
+  border-radius: px;
 }
 .nav-item{
   margin-right: 14px;
@@ -52,7 +54,7 @@
 
 .dropdown-content {
   display: none;
-  position: fixed ;
+  position:absolute ;
   width: 200px;
   background-color: #7EA0B7;
   border: 2px solid  #36494E ;
@@ -60,7 +62,7 @@
 
   text-align: center;
 
-  top: 60px;
+  top: 40px;
   z-index: 2;
 
 
@@ -111,23 +113,69 @@
   margin: 3px 5px;
 
 }
+.dropdown-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+div.sidebar-mobile{
+  overflow: auto;
+  white-space: nowrap;
 
+}
+div.sidebar-mobile-menu{
+  display: none;
+ transition: all  0.9s;
+}
+.main-display{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin: 3px 5px;
 
+}
+.sidebar-sizer{
+  background-color: #36494E;
+  width: 15%;
+  min-height:600px;
+  border-radius: 3px;
+}
+.main-sizer{
+  background-color: #A9CEF4;
+  width: 84%;
+  min-height: 600px;
+  border-radius: 3px;
+}
 
 
 @media screen and (max-width: 1700px ){
 
 }
-@media screen and (max-width: 1000px){
-  body{
-    width: 500px;
-  }
+@media screen and (max-width: 600px){
+  //body{
+  //  width: 500px;
+  //}
   .nav-item{
     display: none;
   }
   .mobile-menu{
     display: flex;
     justify-content: center;
+  }
+  .nav-menu{
+    justify-content: center;
+  }
+  div.sidebar-mobile-menu{
+    transition: all 0.9s;
+    display:inline-flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  div.sidebar-mobile{
+    overflow: auto;
+    white-space: nowrap;
+
   }
 
 }
