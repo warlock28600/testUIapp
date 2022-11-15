@@ -153,6 +153,43 @@ div.sidebar-mobile-menu{
   justify-content: start;
   align-items: center;
 }
+.sidebar-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+}
+.sidebar-content div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-content div div input{
+    width: 150px;
+  margin: 5px;
+  border-radius: 6px;
+}
+.dropdown-display-sidemenu{
+  background-color: #A9CEF4;
+  width: 230px;
+  //padding-left: 2px;
+  //padding-right: 45px;
+  //padding-top: 10px;
+  //padding-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.dropdown-sidebar-categories i{
+
+
+}
+
+
 
 
 @media screen and (max-width: 1700px ){
