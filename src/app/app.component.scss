@@ -67,6 +67,19 @@ body{
   top: 60px;
   left: 100px;
 }
+.image-layerone{
+  background-color: #223d22;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 200px;
+  right: 150px;
+}
+.woman{
+  position: absolute;
+  top: 330px;
+  right: 210px;
+}
 #concept-menu{
   margin-top: 50px;
   width: 100% ;
@@ -104,26 +117,8 @@ body{
 
 
 }
-.concept-menu-inner div{
-//padding-left: 50px;
-  //padding-top: 20px;
-  //padding-bottom: 20px ;
-}
-.concept-menu-inner div img{
 
 
-
-}
-.concept-menu-inner div h6{
-
-
-
-
-}
-.concept-menu-inner div p{
-
-
-}
 .concept-menu-inner-logo{
 
 }
@@ -134,6 +129,13 @@ body{
 }
 .concept-menu-inner-p{
 color: antiquewhite;
+}
+
+
+
+@media screen  and  ( max-width: 700px){
+
+
 }
 
 
